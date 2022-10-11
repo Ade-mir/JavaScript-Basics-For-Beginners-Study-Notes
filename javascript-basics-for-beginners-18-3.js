@@ -99,7 +99,7 @@ let y = x++;
 console.log(y);
 console.log(x);
 
-*/
+
 
 let a = 'red';
 let b = 'blue';
@@ -109,3 +109,124 @@ b = a;
 a = c;
 
 console.log(a, b);
+
+IF ELSE statements
+if (condition) {
+  statement;
+} else if (anotherCondition) {
+  statement;
+} else if (yetAnotherCondition) {
+  statement;
+} else statement;
+
+
+
+// Hour
+// If hour is between 6am and 12pm: Good morning!
+// If hour is between 12pm and 6pm: Good afternoon!
+// Otherwise: Good evening!
+
+let hour = 23;
+
+if (hour >= 6 && hour <= 12) {
+  console.log('Good morning!');
+} else if (hour >= 13 && hour <= 18) {
+  console.log('Good afternoon!');
+} else if (hour >= 19 && hour <= 24) {
+  console.log('Good evening!');
+} else console.log('Good evening!');
+
+
+
+//Switch and Case
+
+let role = '';
+
+switch (role) {
+  case 'guest':
+    console.log('Guest User');
+    break;
+
+  case 'moderator':
+    console.log('Moderator');
+    break;
+
+  default:
+    console.log('Uknown Role');
+}
+
+// Using if statements
+
+if (role === 'guest') {
+  console.log('Guest User');
+} else if (role === 'moderator') {
+  console.log('Moderator');
+} else console.log('Uknown Role');
+
+
+for (let i = 0; i < 5; i++) {
+  console.log('Hello World', i);
+}
+
+
+for (let i = 0; i <= 5; i++) {
+  if (i % 2 !== 0) console.log(i);
+}
+
+let i = 0;
+while (i <= 5) {
+  if (i % 2 !== 0) console.log(i);
+  i++;
+}
+
+
+// do-while (In do-while the statement is executed always at least once, even if the conditions evaluate to false.) You are not going to use do-while a lot practically.
+
+let i = 9;
+do {
+  if (i % 2 !== 0) console.log(i);
+  i++;
+} while (i <= 5);
+
+
+// for-in loop (used to iterate over the properties of an object.)
+
+const person = {
+  name: 'Mosh',
+  age: 30,
+};
+
+for (let key in person) console.log(key, person[key]);
+
+// Dot.notation
+// person.name
+
+// Bracket Notation
+// person['name']
+
+const colors = ['red', 'green', 'blue'];
+
+for (let index in colors) console.log(colors[index]);
+
+//for-of loop (Used to iterate over the elements in an arrays)
+
+for (let color of colors) console.log(color);
+
+let i = 0;
+while (i <= 10) {
+  //if (i === 5) break;
+  if (i % 2 === 0) {
+    i++;
+    continue;
+  }
+  console.log(i);
+  i++;
+}
+
+*/
+
+// if (role === 'guest') {
+//     console.log('Guest User');
+//   } else if (role === 'moderator') {
+//     console.log('Moderator');
+//   } else console.log('Uknown Role');
