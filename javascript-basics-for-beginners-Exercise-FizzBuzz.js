@@ -1,6 +1,6 @@
 // The code I wrote for the FizzBuzz exercise.
 
-const output = fizzBuzz(15);
+const output = fizzBuzz(6);
 console.log(output);
 
 // function fizzBuzz(input) {
