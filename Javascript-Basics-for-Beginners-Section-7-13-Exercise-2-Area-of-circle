@@ -1,0 +1,11 @@
+// circle.radius = 2;
+// console.lg(circle.area);
+
+const circle = {
+  radius: 10,
+  get area() {
+    return Math.PI * this.radius * this.radius;
+  },
+};
+
+console.log(circle.area);
